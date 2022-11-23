@@ -3,7 +3,7 @@ output "nic_id" {
 }
 
 
-output "vm_private_ip_address" {
-  value       = azurerm_virtual_machine.vm.*.private_ip_address
+output "vm_pub_ip" {
+  value       = azurerm_network_interface.nic.private_ip_address
 }
 
