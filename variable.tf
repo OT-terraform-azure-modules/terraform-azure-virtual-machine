@@ -155,3 +155,8 @@ variable "storage_image_reference" {
 
   }
 }
+variable "pubip_name" {
+  type = string
+  description = "Public IP Name"
+  default = ""
+}
