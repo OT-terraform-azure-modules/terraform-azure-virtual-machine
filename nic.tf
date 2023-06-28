@@ -2,7 +2,7 @@ resource "azurerm_public_ip" "example" {
   name                    = var.pubip_name
   location                = var.location
   resource_group_name     = var.resource_group_name
-  allocation_method       = "Dynamic"
+  allocation_method       = "Static"
   idle_timeout_in_minutes = 30
 
   tags = var.tagMap
