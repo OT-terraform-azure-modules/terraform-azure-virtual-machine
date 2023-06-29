@@ -1,4 +1,5 @@
 resource "azurerm_public_ip" "example" {
+  count = var.pubip_name != "" ? 1 : 0
   name                    = var.pubip_name
   location                = var.location
   resource_group_name     = var.resource_group_name
