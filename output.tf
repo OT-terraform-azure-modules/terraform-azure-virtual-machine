@@ -14,3 +14,7 @@ output "vm_private_ip" {
 output "vm_public_ip" {
   value       = azurerm_public_ip.example.ip_address
 }
+
+output "vm_id" {
+  value       = azurerm_virtual_machine.vm.id
+}
