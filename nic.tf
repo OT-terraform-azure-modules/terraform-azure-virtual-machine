@@ -18,6 +18,6 @@ resource "azurerm_network_interface" "nic" {
     name                          = var.name
     subnet_id                     = var.nic_ip_configuration_subnet_id
     private_ip_address_allocation = "Dynamic"
-    public_ip_address_id          = var.pubip_name == "" ? null : azurerm_public_ip.example.id 
+    public_ip_address_id          = var.pubip_name == "" ? null : azurerm_public_ip.example[0].id 
   }
 }
