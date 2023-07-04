@@ -142,7 +142,7 @@ variable "plan" {
   ]
 }
 variable "storage_data_disk" {
-  type        = list(any)
+  type        = any
   description = "(Optional) One or more storage_data_disk blocks"
   default = [
 
