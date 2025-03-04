@@ -8,10 +8,6 @@ variable "nic_ip_configuration_subnet_id" {
   
 }
 
-variable "public_key" {
-  type = string
-}
-
 variable "nic_ip_configuration_private_ip_address_allocation" {
   default = "Dynamic"
 }
